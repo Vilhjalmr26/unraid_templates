@@ -19,14 +19,14 @@ https://hub.docker.com/r/vilhjalmr26/agendav/</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/agendav/agendav/develop/web/public/img/favicon.ico</Icon>
+  <Icon>https://raw.githubusercontent.com/Vilhjalmr26/unraid_templates/main/agendav.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1654413760</DateInstalled>
+  <DateInstalled>1654415297</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="http" Target="80" Default="80" Mode="tcp" Description="Http port for accessing calendar" Type="Port" Display="always" Required="true" Mask="false">80</Config>
-  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/agendav/" Mode="rw" Description="Config path, where settings.php and timezone.ini must reside." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/agendav/</Config>
+  <Config Name="http" Target="80" Default="80" Mode="tcp" Description="Http port for accessing calendar" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/agendav/" Mode="rw" Description="Config path, where settings.php and timezone.ini must reside." Type="Path" Display="always" Required="true" Mask="false"/>
 </Container>
