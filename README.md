@@ -7,3 +7,5 @@ Current templates:
 
 agendav_template.xml
 - Template for Vilhjalmr26/agendav docker
+- DockerHub: https://hub.docker.com/repository/docker/vilhjalmr26/agendav
+- GitHub: https://github.com/Vilhjalmr26/agendav
