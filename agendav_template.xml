@@ -19,7 +19,7 @@ https://hub.docker.com/r/vilhjalmr26/agendav/</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/Vilhjalmr26/unraid_templates/main/agendav.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Vilhjalmr26/unraid_icons/main/agendav.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
