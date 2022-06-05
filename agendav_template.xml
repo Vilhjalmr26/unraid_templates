@@ -12,9 +12,7 @@
   <Overview>Image contains AgenDAV, php 7.4.28 and Apache2, setup for external MySQL database and DAV server&#xD;
 &#xD;
 Initial run will create example.settings.php and example.timezone.ini that will need to be renamed to remove the "example." and modified to match desired setup.&#xD;
-&#xD;
-Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
-&#xD;
+
 https://hub.docker.com/r/vilhjalmr26/agendav/</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
