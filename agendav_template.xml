@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>agendav</Name>
+  <Repository>vilhjalmr26/agendav</Repository>
+  <Registry>https://hub.docker.com/r/vilhjalmr26/agendav/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/vilhjalmr26/agendav/</Support>
+  <Project>https://github.com/agendav/agendav</Project>
+  <Overview>Image contains AgenDAV, php 7.4.28 and Apache2, setup for external MySQL database and DAV server&#xD;
+&#xD;
+Initial run will create example.settings.php and example.timezone.ini that will need to be renamed to remove the "example." and modified to match desired setup.&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/vilhjalmr26/agendav/</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/agendav/agendav/develop/web/public/img/favicon.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1654413760</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="http" Target="80" Default="80" Mode="tcp" Description="Http port for accessing calendar" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/agendav/" Mode="rw" Description="Config path, where settings.php and timezone.ini must reside." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/agendav/</Config>
+</Container>
