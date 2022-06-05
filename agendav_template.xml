@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/vilhjalmr26/agendav/</Support>
+  <Support>https://forums.unraid.net/topic/124480-support-agendav/</Support>
   <Project>https://github.com/agendav/agendav</Project>
   <Overview>Image contains AgenDAV, php 7.4.28 and Apache2, setup for external MySQL database and DAV server&#xD;
 &#xD;
