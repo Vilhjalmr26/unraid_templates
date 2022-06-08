@@ -1,7 +1,7 @@
 # unraid_templates
 Unraid Template XML
 
-A repository for my many (read 1) unraid templates.
+A repository for my many (read 2) unraid templates.
 
 Current templates:
 
