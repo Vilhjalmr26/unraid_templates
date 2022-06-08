@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>import_ics</Name>
+  <Repository>vilhjalmr26/import_ics</Repository>
+  <Registry>https://hub.docker.com/repository/docker/vilhjalmr26/import_ics</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/124480-support-vilhjalmr26-unraid-templates/</Support>
+  <Project>https://github.com/Vilhjalmr26/import_ics</Project>
+  <Overview>Runs a python script at a crontab defined interval that downloads/imports ics files into a caldav server.&#xD;
+&#xD;
+Environment Variables:&#xD;
+ICS_USERNAME - Username for caldav server&#xD;
+ICS_PASSWORD - Password for caldav server&#xD;
+ICS_URL - URL to the caldav server&#xD;
+CRONTAB_SCHEDULE - crontab time string, eg. "0 0 * * *"&#xD;
+TZ - Timezone eg. "America/Chicago"&#xD;
+&#xD;
+creates a calendar_download_map.py file in the config path.  The dictionary contained within uses calendar name as key, and URL to ics as value.&#xD;
+Will download the ics file at the given URL and load its contents into the given calendar name, creating it if it doesnt exist.&#xD;
+&#xD;
+If ics file is not from a download, you can put the file in the /config/ical_export forlder with calendar_name.ics as the filename.&#xD;
+Again, when run the script will import the ics file into  calendar_name, creating it if it doesnt exist.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1654665218</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/import_ics" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/import_ics</Config>
+  <Config Name="ICS Export Folder" Target="/config/ics_export" Default="/mnt/user/appdata/import_ics/ics_export" Mode="rw" Description="Folder into which you can place ics files to be imported.  And which downloaded ics files will be placed into.  If unmapped, downloads will still work." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="ICS_USERNAME" Target="ICS_USERNAME" Default="" Mode="" Description="Username for connecting to CalDAV server" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="ICS_PASSWORD" Target="ICS_PASSWORD" Default="" Mode="" Description="Password for connecting to CalDAV server" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="ICS_URL" Target="ICS_URL" Default="" Mode="" Description="URL to access the CalDAV Server&#13;&#10;eg. http://example.com/dav.php" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="CRONTAB_SCHEDULE" Target="CRONTAB_SCHEDULE" Default="0 0 * * *" Mode="" Description="Crontab schedule string for when script is desired to run." Type="Variable" Display="always" Required="false" Mask="false">0 0 * * *</Config>
+  <Config Name="TimeZone" Target="TZ" Default="UTC" Mode="" Description="Timezone for docker to run in." Type="Variable" Display="always" Required="false" Mask="false">UTC</Config>
+</Container>
