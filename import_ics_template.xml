@@ -26,7 +26,7 @@ Again, when run the script will import the ics file into  calendar_name, creatin
   <Category>Productivity:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://raw.githubusercontent.com/Vilhjalmr26/unraid_icons/main/calendar.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
